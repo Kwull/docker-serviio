@@ -7,6 +7,9 @@ mkdir -p \
 # copy config
 [[ ! -f /config/config/application-profiles.xml || ! -f /config/config/log4j.xml || ! -f /config/config/profiles.xml ]] && \
 	cp /app/serviio/config/* /config/config/
+	
+# copy license
+cp /config/*.lic /app/serviio/
 
 # permissions
 chown -R abc:abc \

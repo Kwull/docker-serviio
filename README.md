@@ -61,13 +61,15 @@ The webui is at `<your-ip>:23423/console`
 Add as many media folder mappings as required with `-v /media/tv-shows` etc... 
 Setting a mapping for transcoding `-v /transcode`  ensures that the container doesn't grow unneccesarily large.
 
+If you have serviio Pro version, copy license file into config folder and restart serviio docker contrainer.
+
 ## Info
 
 * Shell access whilst the container is running: `docker exec -it serviio /bin/bash`
 * To monitor the logs of the container in realtime `docker logs -f serviio`.
 
 ## Versions
-
++ **18-09-16:** Ver 1.7, config directory restructure, license support.
 + **12-09-16:** Add layer badges to README.
 + **11-08-16:** Rebase to alpine linux, move from lsiodev to lsiocommunity.
 + **21-01-16:** Ver 1.6 , webui built in.
