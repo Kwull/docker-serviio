@@ -10,4 +10,5 @@ exec \
 	-Dserviio.home=/app/serviio -Dplugins.location=/config \
 	-Dserviio.defaultTranscodeFolder=/transcode -Dffmpeg.location=/usr/bin/ffmpeg \
 	-Ddcraw.location=/usr/bin/dcraw -classpath \
+	-Dserviio.boundAddr=0.0.0.0 \
 	/app/serviio/lib/*:/config/config org.serviio.MediaServer
